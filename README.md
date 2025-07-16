@@ -1,6 +1,6 @@
 # Portfólio Igor Bondezam França
 
-Um portfólio moderno e interativo desenvolvido com HTML, CSS e JavaScript puro, refletindo a personalidade divertida e gamer do Igor, mantendo a seriedade profissional.
+Um portfólio moderno e interativo desenvolvido com HTML, CSS e JavaScript puro, refletindo a minha personalidade divertida e gamer, mantendo a seriedade profissional.
 
 ## 🎮 Características Especiais
 

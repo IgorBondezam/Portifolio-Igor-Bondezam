@@ -931,6 +931,42 @@ section {
     color: var(--text-secondary);
 }
 
+/* === Estilo para o seletor de idioma === */
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.language-selector select {
+    background: #181c2f;
+    color: #fff;
+    border: 1.5px solid #2e3650;
+    border-radius: 6px;
+    padding: 0.3em 1.2em 0.3em 0.8em;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(10,14,39,0.08);
+    cursor: pointer;
+    margin-top: 2px;
+}
+.language-selector select:focus, .language-selector select:hover {
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 2px #4f8cff33;
+}
+
+@media (max-width: 900px) {
+    .language-selector {
+        margin-left: 0.5rem;
+    }
+    .language-selector select {
+        font-size: 0.95rem;
+        padding: 0.2em 0.8em 0.2em 0.6em;
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
