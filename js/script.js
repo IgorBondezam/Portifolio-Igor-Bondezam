@@ -191,43 +191,61 @@ const translations = {
 translations.pt.projects_data = [
     {
         name: 'Card Magic Spring API',
-        description: 'Este aplicativo é uma API criada para fãs de Magic: The Gathering (MTG), com foco específico no formato Commander. Ele permite que os usuários pesquisem, filtrem e explorem a vasta biblioteca de cartas de MTG, obtidas diretamente da API oficial do Magic: The Gathering. O objetivo é oferecer uma maneira fácil e eficiente de interagir com os dados das cartas, sendo útil tanto para desenvolvedores quanto para jogadores.'
+        description: 'Este aplicativo é uma API criada para fãs de Magic: The Gathering (MTG), com foco específico no formato Commander. Ele permite que os usuários pesquisem, filtrem e explorem a vasta biblioteca de cartas de MTG, obtidas diretamente da API oficial do Magic: The Gathering. O objetivo é oferecer uma maneira fácil e eficiente de interagir com os dados das cartas, sendo útil tanto para desenvolvedores quanto para jogadores.',
+        link: 'https://github.com/IgorBondezam/Card-Magic-Spring',
+        languages: ['Java', 'Spring Boot', 'Gradle', 'PostgreSQL', 'Spring Security', 'Swagger']
     },
     {
         name: 'Jogo-PizzaEnter',
-        description: 'Jogo realizado em VISUALG inspirado no cookie clicker. Pressionando "Enter" gerará ponto e moedas, que é possível comprar itens para melhorar sua pontuação. Bom Jogo para todos.'
+        description: 'Jogo realizado em VISUALG inspirado no cookie clicker. Pressionando "Enter" gerará ponto e moedas, que é possível comprar itens para melhorar sua pontuação. Bom Jogo para todos.',
+        link: 'https://github.com/IgorBondezam/Jogo-PizzaEnter',
+        languages: ['Portugol']
     },
     {
         name: 'Angular Projects Examples',
-        description: 'Alguns projetos feitos em angular durante meu aprendizado. Tentando explicar e deixar um exemplo caso precise no futuro. Explicando para o que cada parte é utilizada.'
+        description: 'Alguns projetos feitos em angular durante meu aprendizado. Tentando explicar e deixar um exemplo caso precise no futuro. Explicando para o que cada parte é utilizada.',
+        link: 'https://github.com/IgorBondezam/Angular-projects-examples',
+        languages: ['Angular', 'TypeScript', 'CSS', 'HTML', 'Node.Js']
     }
 ];
 translations.en.projects_data = [
     {
         name: 'Card Magic Spring API',
-        description: 'This application is an API created for Magic: The Gathering (MTG) fans, specifically focused on the Commander format. It allows users to search, filter, and explore the vast MTG card library, fetched directly from the official Magic: The Gathering API. The goal is to provide an easy and efficient way to interact with card data, useful for both developers and players.'
+        description: 'This application is an API created for Magic: The Gathering (MTG) fans, specifically focused on the Commander format. It allows users to search, filter, and explore the vast MTG card library, fetched directly from the official Magic: The Gathering API. The goal is to provide an easy and efficient way to interact with card data, useful for both developers and players.',
+        link: 'https://github.com/IgorBondezam/Card-Magic-Spring',
+        languages: ['Java', 'Spring Boot', 'Gradle', 'PostgreSQL', 'Spring Security', 'Swagger']
     },
     {
         name: 'Jogo-PizzaEnter',
-        description: 'Game made in VISUALG inspired by cookie clicker. Pressing "Enter" will generate points and coins, which can be used to buy items to improve your score. Have fun!'
+        description: 'Game made in VISUALG inspired by cookie clicker. Pressing "Enter" will generate points and coins, which can be used to buy items to improve your score. Have fun!',
+        link: 'https://github.com/IgorBondezam/Jogo-PizzaEnter',
+        languages: ['Portugol']
     },
     {
         name: 'Angular Projects Examples',
-        description: 'Some projects made in Angular during my learning process. Trying to explain and leave an example in case I need it in the future. Explaining what each part is used for.'
+        description: 'Some projects made in Angular during my learning process. Trying to explain and leave an example in case I need it in the future. Explaining what each part is used for.',
+        link: 'https://github.com/IgorBondezam/Angular-projects-examples',
+        languages: ['Angular', 'TypeScript', 'CSS', 'HTML', 'Node.Js']
     }
 ];
 translations.es.projects_data = [
     {
         name: 'Card Magic Spring API',
-        description: 'Esta aplicación es una API creada para fanáticos de Magic: The Gathering (MTG), con un enfoque específico en el formato Commander. Permite a los usuarios buscar, filtrar y explorar la vasta biblioteca de cartas de MTG, obtenidas directamente de la API oficial de Magic: The Gathering. El objetivo es ofrecer una forma fácil y eficiente de interactuar con los datos de las cartas, siendo útil tanto para desarrolladores como para jugadores.'
+        description: 'Esta aplicación es una API creada para fanáticos de Magic: The Gathering (MTG), con un enfoque específico en el formato Commander. Permite a los usuarios buscar, filtrar y explorar la vasta biblioteca de cartas de MTG, obtenidas directamente de la API oficial de Magic: The Gathering. El objetivo es ofrecer una forma fácil y eficiente de interactuar con los datos de las cartas, siendo útil tanto para desarrolladores como para jugadores.',
+        link: 'https://github.com/IgorBondezam/Card-Magic-Spring',
+        languages: ['Java', 'Spring Boot', 'Gradle', 'PostgreSQL', 'Spring Security', 'Swagger']
     },
     {
         name: 'Jogo-PizzaEnter',
-        description: 'Juego realizado en VISUALG inspirado en cookie clicker. Presionando "Enter" se generan puntos y monedas, que se pueden usar para comprar ítems y mejorar tu puntuación. ¡Buen juego a todos!'
+        description: 'Juego realizado en VISUALG inspirado en cookie clicker. Presionando "Enter" se generan puntos y monedas, que se pueden usar para comprar ítems y mejorar tu puntuación. ¡Buen juego a todos!',
+        link: 'https://github.com/IgorBondezam/Jogo-PizzaEnter',
+        languages: ['Portugol']
     },
     {
         name: 'Angular Projects Examples',
-        description: 'Algunos proyectos hechos en Angular durante mi aprendizaje. Intentando explicar y dejar un ejemplo por si lo necesito en el futuro. Explicando para qué se utiliza cada parte.'
+        description: 'Algunos proyectos hechos en Angular durante mi aprendizaje. Intentando explicar y dejar un ejemplo por si lo necesito en el futuro. Explicando para qué se utiliza cada parte.',
+        link: 'https://github.com/IgorBondezam/Angular-projects-examples',
+        languages: ['Angular', 'TypeScript', 'CSS', 'HTML', 'Node.Js']
     }
 ];
 
@@ -404,16 +422,16 @@ function createProjects() {
     const lang = getCurrentLang();
     const projects = translations[lang].projects_data;
     return projects.map((project, idx) => `
-        <div class="project-card" onclick="openProject('${CONFIG.githubApiUrl}')">
+        <div class="project-card" onclick="openProject('${project.link}')">
             <div class="project-header">
                 <h3 class="project-title">${project.name}</h3>
                 <p class="project-description">${project.description}</p>
             </div>
             <div class="project-tech">
-                ${['Java', 'Spring Boot', 'PostgreSQL', 'Portugol', 'Angular', 'TypeScript', 'HTML/CSS', 'RxJS'][idx] ? `<span class="tech-tag">${['Java', 'Spring Boot', 'PostgreSQL', 'Portugol', 'Angular', 'TypeScript', 'HTML/CSS', 'RxJS'][idx]}</span>` : ''}
+                ${createLanguageTagProjects(project.languages)}
             </div>
             <div class="project-links">
-                <a href="${CONFIG.githubApiUrl}" target="_blank" class="project-link" onclick="event.stopPropagation()">
+                <a href="${project.link}" target="_blank" class="project-link" onclick="event.stopPropagation()">
                     <i class="fab fa-github"></i>
                     ${translations[lang].projects_github}
                 </a>
@@ -422,11 +440,18 @@ function createProjects() {
     `).join('');
 }
 
+function createLanguageTagProjects(languages) {
+    let spans = '';
+    languages.forEach(l => {
+        spans += `<span class="tech-tag">${l}</span>`
+    })
+    return spans;
+}
+
 function initializeCertificates() {
     const cardDeck = document.getElementById('card-deck');
     const lang = getCurrentLang();
     const certificates = translations[lang].certificates_data;
-    console.log(certificates);
     const certLabels = translations[lang];
     cardDeck.innerHTML = certificates.map((cert, index) => {
         let hoursLabel = cert.hours ? `<div class='card-hours'>${cert.hours}</div>` : '';
